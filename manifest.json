@@ -1,0 +1,13 @@
+{
+  "name": "manaba enterer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Extension for entering manaba with enter key.",
+  "content_scripts": [{
+    "matches": [
+      "https://idp.account.tsukuba.ac.jp/idp/profile/SAML2/Redirect/SSO*",
+      "https://gakunin-idp.c.chuo-u.ac.jp/pub/login.cgi?"
+    ],
+    "js": ["content.js"]
+  }]
+}
